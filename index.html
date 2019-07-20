@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable = no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <link rel="apple-touch-icon" sizes="120x120" href="media/icon-iphone-retina.png">
+  <!-- <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad-retina.png"> -->
+
+  <link rel="stylesheet" type="text/css" href="css/Style.css" media="screen"/>
+  <link rel="stylesheet" type="text/css" href="css/Layout.css" media="screen"/>
+
+  <title> Patrick the Snail - Level 1 </title>
+
+  <script src="js/init.js"></script>
+  <script src="js/map.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/patrick.js"></script>
+  <script src="js/event.js"></script>
+
+</head>
+
+<body>
+
+<div class="mainWrapper">
+
+  <div class="mainScreen">
+
+    <div class="mainTitle">
+      <span class="mainTitleText">..=~*  P4TR1CK TH3 SN41L  -  L3V3L #1  *~=..</span>
+    </div>
+
+    <canvas id="mainCanvasCollision" width="800" height="800" style="z-index:-5"></canvas>
+    <canvas id="mainCanvasPath" width="800" height="800" style="z-index:-4"></canvas>
+    <canvas id="mainCanvasMap" width="800" height="800" style="z-index:-3; opacity:0.95"></canvas>
+    <canvas id="mainCanvasSensor" width="800" height="800" style="z-index:-2"></canvas>
+    <canvas id="mainCanvasSlime" width="800" height="800" style="z-index:-1"></canvas>
+    <canvas id="mainCanvasPatrick" width="800" height="800" style="z-index:0"></canvas>
+
+    <div class="mainInfo">
+      <p id="mainTimer">0</p>
+      <p id="mainStatus">0</p>
+      <p id="mainSensor">0</p>
+      <p id="mainFPS">0</p>
+    </div>
+
+    <div class="snailOS">
+      <span> snailOS 0.26 </span>
+    </div>
+
+  </div>
+
+  <div class="mainControl">
+    <p id="bStart" onclick="startGame()">¿</p>
+
+    <p class="controlLbl control1stClm"> speed </p>
+    <p class="button controlVal control1stClm" id="controlCurrentSpeed"> 0 </p>
+    <p class="button controlUp control1stClm" onclick="Patrick.changeSpeed(1.1)">+</p>
+    <p class="button controlDwn control1stClm" onclick="Patrick.changeSpeed(1/1.1)">-</p>
+
+    <p class="controlLbl control2ndClm"> P </p>
+    <p class="button controlVal control2ndClm" id="controlCurrentP"> 0 </p>
+    <p class="button controlUp control2ndClm" onclick="Patrick.changeP(1.1)">+</p>
+    <p class="button controlDwn control2ndClm" onclick="Patrick.changeP(1/1.1)">-</p>
+
+    <p class="controlLbl control3rdClm"> I </p>
+    <p class="button controlVal control3rdClm" id="controlCurrentI"> 0 </p>
+    <p class="button controlUp control3rdClm" onclick="Patrick.changeI(1.1)">+</p>
+    <p class="button controlDwn control3rdClm" onclick="Patrick.changeI(1/1.1)">-</p>
+
+    <p class="controlLbl control4thClm"> D </p>
+    <p class="button controlVal control4thClm" id="controlCurrentD"> 0 </p>
+    <p class="button controlUp control4thClm" onclick="Patrick.changeD(1.1)">+</p>
+    <p class="button controlDwn control4thClm" onclick="Patrick.changeD(1/1.1)">-</p>
+
+  </div>
+
+</div>
+
+<script>
+
+  Init.initialize("LVL01");
+
+</script>
+
+</body>
+</html>

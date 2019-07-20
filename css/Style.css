@@ -1,0 +1,172 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+  padding: 0;
+  margin: 0;
+  background-image: url("../media/bg_snails.png");
+  font-family: 'Lato', Calibri, sans-serif;
+  font-weight: 100;
+}
+
+.mainScreen{
+  background-color: grey;
+  z-index: -20;
+  border-radius:25px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  box-shadow: 0 0 20px 5px rgba(0,0,0,1);
+}
+
+canvas {
+  border-radius:15px;
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+  box-shadow: inset 0 0 30px 3px rgba(0,0,0,0.2);
+}
+
+.mainTitle{
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 100;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.mainTitleText{
+  background-color: black;
+  color:white;
+  border-style:none;
+  border-radius: 2px;
+  padding-left:5px;
+  padding-right:5px;
+}
+
+.mainInfo{
+  padding: 5px;
+  background-color: white;
+  opacity: 0.5;
+  font-size: 0.5em;
+  border-style:solid;
+  border-width: 1px;
+  box-shadow: 0 0 10px 2px rgba(0,0,0,1);
+  border-radius:11px;
+}
+
+.snailOS{
+  color: red;
+  font-size: 1em;
+  text-shadow: 0px 0px 1px  #FFFFFF;
+}
+
+
+.mainControl{
+  background-color: orange;
+  background-image: repeating-linear-gradient(-45deg, transparent, transparent 20px, rgba(0,0,0,1) 20px, rgba(0,0,0,1) 40px);
+  border-top-left-radius:15px;
+  border-top-right-radius:15px;
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  box-shadow: 0 0 20px 5px rgba(0,0,0,1);
+}
+
+/*
+#############################################
+### Button designs
+*/
+
+#bStart{
+  position: absolute;
+  margin: 0;
+  top: 5%;
+  right: 3%;
+  width:20%;
+  height: 35%;
+  border-radius:10%;
+  background-color: red;
+  text-align: center;
+  border-style:solid;
+  border-color: black;
+  border-width: 2px;
+  box-shadow: 0 0 5px 2px rgb(0,0,0);
+  padding-top: 0%;
+  font-size: 2.0em;
+  font-weight: bold;
+}
+
+.button{
+  position: absolute;
+  text-align: center;
+  border-style:solid;
+  border-color: black;
+  border-width: 1px;
+  box-shadow: 0 0 2px 1px rgb(0,0,0);
+
+}
+
+
+.controlLbl{
+  position: absolute;
+  top: 3%;
+  height: 10%;
+  width: 15%;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 100;
+  font-size: 0.8em;
+  text-align: center;
+  background-color: black;
+  color:white;
+  border-width: 1px;
+  border-radius: 2px;
+  box-shadow: 0 0 0px 0px rgb(0,0,0);
+}
+
+.controlVal{
+  top: 12%;
+  height: 12%;
+  width: 15%;
+  background-color: beige;
+  border-radius:2px;
+  font-size: 0.8em;
+}
+
+.controlUp{
+  top: 23%;
+  height: 25%;
+  width: 15%;
+  background-color: darkgrey;
+  border-radius:8px;
+  font-size: 1.5em;
+}
+
+.controlDwn{
+  top: 52%;
+  height: 25%;
+  width: 15%;
+  background-color: darkgrey;
+  border-radius:8px;
+  font-size: 1.5em;
+}
+
+.control1stClm{
+  left: 4%;
+}
+
+.control2ndClm{
+  left: 22%;
+}
+
+.control3rdClm{
+  left: 40%;
+}
+
+.control4thClm{
+  left: 58%;
+}
