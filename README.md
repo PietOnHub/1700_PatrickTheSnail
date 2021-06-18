@@ -1,4 +1,4 @@
-# 2017_PatrickTheSnail
+# Patrick the Snail
 First try of a simple game including an adjustable PID controller to setup a moving entity trying to follow a curve with two sensors. 
 Learned techniques, all with plain js: 
 - game loop
